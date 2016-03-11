@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8" />
+		<title>mysite</title>
+		<link href="css/style.css" type="text/css" rel="stylesheet" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+		<script type="text/javascript">
+			function changeMidContent(idContent, idMenu) {
+				document.getElementById("recentContent").style.display= "none";
+				document.getElementById("popularContent").style.display= "none";
+				document.getElementById("peTerminateContent").style.display= "none";
+				document.getElementById("popularContent1").style.display= "none";
+
+				document.getElementById("menuRecent").className = "";
+				document.getElementById("menupopular").className = "";
+				document.getElementById("menupeTerminate").className = "";
+				document.getElementById("menupopular1").className = "";
+
+				document.getElementById(idContent).style.display= "block";
+				document.getElementById(idMenu).className = "selectedMidItem";
+				
+			}
+		</script>
+		</head>
+	
+	<body>
+		<div class="roline"></div>
+			<div class="meniu">	
+				<div class="mid">
+					<header>
+						<div id="topmeniu">
+							<aside>
+								<div class="float-left">
+									<a class="mgRight35" href="#">eDONATIE</a>
+									<a class="mgRight35" href="#"><i class="fa fa-eye"></i>
+										DESCOPERA PROIECTE</a>
+									<a href="#"><i class="fa fa-plus"></i>
+										CREEAZA PROIECT
+									</a>
+								</div>
+								<div class="float-right">
+									<div class="float-right logare">
+										<a href="#"><i class="fa fa-lock"></i>
+											LOGARE
+										</a>
+									</div>
+									<div class="float-right">
+										<input type="text" placeholder="Cautare" style="height: 60px; width: 200px; background-color: #404654; border-color: 
+										#404654;">
+										</input>
+									</div>
+									<div class="float-right search">
+										<i class="fa fa-search mgLeft10" style="color: white;"></i>
+									</div> 
+								</div>
+							</aside>
+						</div>
+					</header>
+				</div>			
+			</div>
+	
+		<div class="header">
+			<div class="mid">
+				<h1>Crowdfunding romanesc</h1>
+				<div class="float-left">
+					<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida <br> nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis <br> bibendum auctor, nisi elit consequat.</p>
+					<a class="buttonCreazaCont" href="#">Creaza Cont</a>
+					<p class="vezivideo">sau vezi video <i class="fa fa-arrow-right" style="font-size: 15px;"></i></p>
+				</div>
+				<div class="float-righ video">
+					<iframe width="440" height="260" src="https://www.youtube.com/embed/3gxNW2Ulpwk" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+		<div class="roline"></div>
+		
+		<div class="content">
+			<div class="mid">
+				<div class="float-left">
+					<div class="staricon"></div>
+					<div >
+						 <h1 class="locuri">Locuri de Vizitat; O drumetie</h1>
+					</div>	
+					
+					<hr align="center" width="640" style="color: #e6e6e6" />
+
+					<div class="float-left" style="width: 100%;">
+						<div class="pic1 float-left" >
+							<img src="images/pic1.png">
+							<p> Proiectul Lunii propus de <br><b>Ana Toader</b>
+							</p>
+							<div class="time1">
+								<i class="fa fa-clock-o">23z</i>
+							</div>
+						</div>
+						<div class="container"></div>
+						<div class="userpic1"></div>
+						
+						<div class="descriere float-right">
+							<h5>DESCRIEREEA PROIECTULUI</h5>
+							
+							<p>This is Photoshop's version  of Lorem Ipsum.<br> Proin gravida nibh vel velit auctor aliquet.<br> Aenean sollicitudin, lorem quis bibendum<br> auctor, nisi elit consequat ipsum, nec sagittis<br> sem nibh id elit. Duis sed odio sit amet nibh<br> 	 vulputate cursus a sit amet ...</p> 
+							
+							<a href="#" class="buttonVizPro"><i class="fa fa-arrow-right" style="color: #ff7474"></i> Viziteaza proiectul</a>
+						</div>
+						<div class="hrdotted"> 
+							<hr  style="border-top: dotted 1px;" align="center" width="640"/>
+						</div>	
+						<div class="oreramase">
+							<div class="float-left">
+								<div style="font-size: 36px;">60</div>
+								<div style="font-size: 14px;">ORE RAMASE</div>
+							</div>
+							<div class="finantat float-left">	
+								<div style="font-size: 36px;">79%</div>
+								<div style="font-size: 14px;">FINANTAT</div>
+							</div>	
+						</div>			
+					</div>										
+				</div>
+			
+				<div class="float-right">
+					<div class="border">
+						<div class="listicon">
+							<img src="images/listicon.png"> 
+							<p>Activitate recenta</p>
+						</div>
+						<div class="hrborder"></div>
+						
+						<div class="gimme">
+							<img src="images/layer4.png">
+							<div class="GimmeMoMoney">
+								<h4>GimmeMoMoney</h4>
+							</div>
+							
+							<div>
+								<p class="ProUman">a creat un proiect nou in<br> <b>Proiecte umanitare</b></p>
+							</div>
+							<div class="time2">
+								<i class="fa fa-clock-o">10m</i>
+							</div>							
+							<div class="dotborder"></div>
+						</div>
+						
+						<div class="gimme">
+							<img src="images/layer5.png">
+							<div class="GimmeMoMoney">
+								<h4>Dan Silvestru</h4>
+							</div>
+							
+							<div>
+								<p class="ProUman">a reusit sa finanteze proiectul<br> <b>Mana de la mana pentru Iasi</b></p>
+							</div>
+							<div class="time3">
+								<i class="fa fa-clock-o">1h</i>
+							</div>							
+							<div class="dotborder"></div>
+						</div>
+
+						<div class="gimme">
+							<img src="images/layer7.png">
+							<div class="GimmeMoMoney">
+								<h4>CaricaturiLaMinut</h4>
+							</div>
+							
+							<div>
+								<p class="ProUman">se termina in 4 ore si e finantat<br> 99%.<b>Ajuta-l!</b></p>
+							</div>
+							<div class="time4">
+								<i class="fa fa-clock-o">3h</i>
+							</div>							
+							<div class="dotborder"></div>
+						</div>
+
+						<div class="gimme">
+							<img src="images/layer29.png">
+							<div class="GimmeMoMoney">
+								<h4>Practicul</h4>
+							</div>
+							
+							<div>
+								<p class="ProUman">a postat un proiect nou in<br> <b>Proiecte Amuzante</b></p>
+							</div>
+							<div class="time5">
+								<i class="fa fa-clock-o">3h</i>
+							</div>							
+							<div class="dotborder"></div>
+						</div>
+						<div>
+							<a href="#" class="butonVezMaiMul"><i class="fa fa-arrow-right" style="color: #ff7474"></i>Vezi mai multe</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="midmeniu">
+			<div class="mid">
+				<div class="nav">
+					<ul>
+						<li><a id="menuRecent" style="cursor:pointer" class="selectedMidItem" onClick="changeMidContent('recentContent', 'menuRecent')">RECENTE</a></li>
+						<li><a id="menupopular" style="cursor:pointer" onClick="changeMidContent('popularContent', 'menupopular')">POPULARE</a></li>
+						<li><a id="menupeTerminate" style="cursor:pointer" onClick="changeMidContent('peTerminateContent', 'menupeTerminate')">PE TERMINATE</a></li>	
+						<li><a id="menupopular1" style="cursor:pointer" onClick="changeMidContent('popularContent1', 'menupopular1')">POPULARE</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>	
+		
+		<div id="recentContent" class="bot">
+			<div class="mid">
+				<div class="box">	
+					<div class="img1">
+						<div class="floating-box">
+								<img src="images/layer35.png">
+								<h5 class="thisis">This is Photoshop's version  of Lorem<br> Ipsum. Proin gravida nibh vel velit<br> auctor aliquet.</h5>
+							<div class="oreramase32z">
+		                        <div style="font-size: 36px;">32z</div>
+		                        <div style="font-size: 12px;">ramase</div>
+		                    	</div>
+		                    <div class="bordvert"></div>
+		                    <div class="finantat13">
+		                        <div style="font-size: 36px;">13%</div>
+		                        <div style="font-size: 14px;">finantat</div>
+		                    </div>
+		                    <div class="arowicon">
+		                    	<img src="images/arowicon.png">
+		                    </div>
+		                    <div class="userpic2">
+		                    	<img src="images/userpic2.png">
+		                    </div>
+		                    <div class="time6">
+		                        <i class="fa fa-clock-o">3h</i>
+		                    </div>
+		                    <div class="cafart">
+		                        <h5>
+		                            Cafeneaua Artistilor si<br> Iubitorilor de Arta
+		                        </h5>
+                        	</div>   
+						</div>
+					</div>
+					<div class="img2">
+						<div class="floating-box">
+							<div class="bottomcontainer">
+								<img src="images/bottomcontainer.png">
+							</div>
+							<div class="layer36">
+								<img src="images/layer36.png">
+							</div>
+							<div class="layer30">
+                    			<img src="images/layer30.png">
+                			</div>
+                			<div class="time7">
+                        		<i class="fa fa-clock-o">3h</i>
+                    		</div>
+                    		<div class="documentar">
+                       			<h5>Documentarul oamenilor</h5>
+                    		</div>
+						</div>
+					</div>
+					<div class="img3">
+						<div class="floating-box">
+							<div class="bottomcontainer1">
+                       			<img src="images/bottomcontainer1.png">
+                    		</div>
+                    		<div class="layer38">
+                    			<img src="images/layer38.png">
+                    		</div>
+                    		<div class="layer31">
+                        		<img src="images/layer31.png">
+                    		</div>
+                    		<div class="time8">
+                        		<i class="fa fa-clock-o">3h</i>
+                   			</div>
+                   			<div class="fete">
+                        		<h5>
+                            		Fete si camerele lor. O<br> analiza obiectiva
+                        		</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="box2">	
+					<div class="img4">
+						<div class="floating-box">
+							<div class="bottomcontainer2">
+								<img src="images/bottomcontainer2.png">
+							</div>
+							<div class="layer39">
+								<img src="images/layer39.png">
+							</div> 
+							<div class="layer32">
+								<img src="images/layer32.png">
+							</div> 
+							<div class="time9">
+								<i class="fa fa-clock-o">3h</i>
+							</div>
+							<div class="zbor">
+								<h5>
+									Un zbor deasupra unui<br> cuib de cuci..cu balonul
+								</h5>
+							</div> 
+						</div>
+					</div>
+					
+					<div class="img5">
+						<div class="floating-box">
+							<div class="bottomcontainer3">
+								<img src="images/bottomcontainer3.png">
+							</div>
+							<div class="layer40">
+								<img src="images/layer40.png">
+							</div> 
+							<div class="layer32">
+								<img src="images/layer33.png">
+							</div> 
+							<div class="time10">
+								<i class="fa fa-clock-o">3h</i>
+							</div>
+							<div class="gaming">
+								<h5>Ouya - Gaming<br> romanesc</h5>
+							</div>
+						</div>
+					</div>
+					
+					<div class="img6">
+						<div class="floating-box">
+							<div class="bottomcontainer4">
+								<img src="images/bottomcontainer4.png">
+							</div>
+							<div class="layer37">
+								<img src="images/layer37.png">
+							</div> 
+							<div class="layer34">
+								<img src="images/layer34.png">
+							</div> 
+							<div class="time11">
+								<i class="fa fa-clock-o">3h</i>
+							</div>
+							<div class="visand">
+								<h5>Visand la nemurirea<br> sufletului</h5>
+							</div>
+						</div>
+
+					</div>
+					<div>
+						<a href="#" class="buttonVeziToate"><i class="fa fa-arrow-right"></i> Vezi toate in "Recente"</a>
+					</div>
+				</div>
+			</div>		
+		</div>
+
+		<div id="popularContent" class="bot" style="display: none;">
+			<div class="mid">
+				<div class="box">	
+					<div class="img1">
+						<div class="floating-box">
+								<img src="images/layer35.png">
+								<h5 class="thisis">This is Photoshop's version  of Lorem<br> Ipsum. Proin gravida nibh vel velit<br> auctor aliquet.</h5>
+							<div class="oreramase32z">
+		                        <div style="font-size: 36px;">32z</div>
+		                        <div style="font-size: 12px;">ramase</div>
+		                    	</div>
+		                    <div class="bordvert"></div>
+		                    <div class="finantat13">
+		                        <div style="font-size: 36px;">13%</div>
+		                        <div style="font-size: 14px;">finantat</div>
+		                    </div>
+		                    <div class="arowicon">
+		                    	<img src="images/arowicon.png">
+		                    </div>
+		                    <div class="userpic2">
+		                    	<img src="images/userpic2.png">
+		                    </div>
+		                    <div class="time6">
+		                        <i class="fa fa-clock-o">3h</i>
+		                    </div>
+		                    <div class="cafart">
+		                        <h5>
+		                            Cafeneaua Artistilor si<br> Iubitorilor de Arta
+		                        </h5>
+                        	</div>   
+						</div>
+					</div>
+					<div class="img2">
+						<div class="floating-box">
+							<div class="bottomcontainer1">
+                       			<img src="images/bottomcontainer1.png">
+                    		</div>
+                    		<div class="layer38">
+                    			<img src="images/layer38.png">
+                    		</div>
+                    		<div class="layer31">
+                        		<img src="images/layer31.png">
+                    		</div>
+                    		<div class="time8">
+                        		<i class="fa fa-clock-o">3h</i>
+                   			</div>
+                   			<div class="fete">
+                        		<h5>
+                            		Fete si camerele lor. O<br> analiza obiectiva
+                        		</h5>
+							</div>
+						</div>
+					</div>
+					<div class="img3">
+						<div class="floating-box">
+							<div class="bottomcontainer">
+								<img src="images/bottomcontainer.png">
+							</div>
+							<div class="layer36">
+								<img src="images/layer36.png">
+							</div>
+							<div class="layer30">
+                    			<img src="images/layer30.png">
+                			</div>
+                			<div class="time7">
+                        		<i class="fa fa-clock-o">3h</i>
+                    		</div>
+                    		<div class="documentar">
+                       			<h5>Documentarul oamenilor</h5>
+                    		</div>
+							
+						</div>
+					</div>
+				</div>
+
+				<div class="box2">	
+					<div class="img4">
+						<div class="floating-box">
+							<div class="bottomcontainer4">
+								<img src="images/bottomcontainer4.png">
+							</div>
+							<div class="layer37">
+								<img src="images/layer37.png">
+							</div> 
+							<div class="layer34">
+								<img src="images/layer34.png">
+							</div> 
+							<div class="time11">
+								<i class="fa fa-clock-o">3h</i>
+							</div>
+							<div class="visand">
+								<h5>Visand la nemurirea<br> sufletului</h5>
+							</div>
+						</div>
+					</div>
+					
+					<div class="img5">
+						<div class="floating-box">
+							<div class="bottomcontainer3">
+								<img src="images/bottomcontainer3.png">
+							</div>
+							<div class="layer40">
+								<img src="images/layer40.png">
+							</div> 
+							<div class="layer32">
+								<img src="images/layer33.png">
+							</div> 
+							<div class="time10">
+								<i class="fa fa-clock-o">3h</i>
+							</div>
+							<div class="gaming">
+								<h5>Ouya - Gaming<br> romanesc</h5>
+							</div>
+						</div>
+					</div>
+					
+					<div class="img6">
+						<div class="floating-box">
+							<div class="bottomcontainer2">
+								<img src="images/bottomcontainer2.png">
+							</div>
+							<div class="layer39">
+								<img src="images/layer39.png">
+							</div> 
+							<div class="layer32">
+								<img src="images/layer32.png">
+							</div> 
+							<div class="time9">
+								<i class="fa fa-clock-o">3h</i>
+							</div>
+							<div class="zbor">
+								<h5>
+									Un zbor deasupra unui<br> cuib de cuci..cu balonul
+								</h5>
+							</div> 
+							
+						</div>
+
+					</div>
+					<div>
+						<a href="#" class="buttonVeziToate"><i class="fa fa-arrow-right"></i> Vezi toate in "Recente"</a>
+					</div>
+				</div>
+			</div>		
+		</div>
+
+		<div id="peTerminateContent" class="bot" style="display: none;">
+			<div class="mid">
+				<div class="box">	
+					<div class="img1">
+						<div class="floating-box">
+								<img src="images/layer35.png">
+								<h5 class="thisis">This is Photoshop's version  of Lorem<br> Ipsum. Proin gravida nibh vel velit<br> auctor aliquet.</h5>
+							<div class="oreramase32z">
+		                        <div style="font-size: 36px;">32z</div>
+		                        <div style="font-size: 12px;">ramase</div>
+		                    	</div>
+		                    <div class="bordvert"></div>
+		                    <div class="finantat13">
+		                        <div style="font-size: 36px;">13%</div>
+		                        <div style="font-size: 14px;">finantat</div>
+		                    </div>
+		                    <div class="arowicon">
+		                    	<img src="images/arowicon.png">
+		                    </div>
+		                    <div class="userpic2">
+		                    	<img src="images/userpic2.png">
+		                    </div>
+		                    <div class="time6">
+		                        <i class="fa fa-clock-o">3h</i>
+		                    </div>
+		                    <div class="cafart">
+		                        <h5>
+		                            Cafeneaua Artistilor si<br> Iubitorilor de Arta
+		                        </h5>
+                        	</div>   
+						</div>
+					</div>
+					<div class="img2">
+						<div class="floating-box">
+							<div class="bottomcontainer1">
+                       			<img src="images/bottomcontainer1.png">
+                    		</div>
+                    		<div class="layer38">
+                    			<img src="images/layer38.png">
+                    		</div>
+                    		<div class="layer31">
+                        		<img src="images/layer31.png">
+                    		</div>
+                    		<div class="time8">
+                        		<i class="fa fa-clock-o">3h</i>
+                   			</div>
+                   			<div class="fete">
+                        		<h5>
+                            		Fete si camerele lor. O<br> analiza obiectiva
+                        		</h5>
+							</div>
+						</div>
+					</div>
+					<div class="img3">
+						<div class="floating-box">
+							<div class="bottomcontainer">
+								<img src="images/bottomcontainer.png">
+							</div>
+							<div class="layer36">
+								<img src="images/layer36.png">
+							</div>
+							<div class="layer30">
+                    			<img src="images/layer30.png">
+                			</div>
+                			<div class="time7">
+                        		<i class="fa fa-clock-o">3h</i>
+                    		</div>
+                    		<div class="documentar">
+                       			<h5>Documentarul oamenilor</h5>
+                    		</div>
+							
+						</div>
+					</div>
+				</div>
+
+				<div class="box2">	
+					<div class="img4">
+						<div class="floating-box">
+							<div class="bottomcontainer2">
+								<img src="images/bottomcontainer2.png">
+							</div>
+							<div class="layer39">
+								<img src="images/layer39.png">
+							</div> 
+							<div class="layer32">
+								<img src="images/layer32.png">
+							</div> 
+							<div class="time9">
+								<i class="fa fa-clock-o">3h</i>
+							</div>
+							<div class="zbor">
+								<h5>
+									Un zbor deasupra unui<br> cuib de cuci..cu balonul
+								</h5>
+							</div> 
+						</div>
+					</div>
+					
+					<div class="img5">
+						<div class="floating-box">
+							<div class="bottomcontainer3">
+								<img src="images/bottomcontainer3.png">
+							</div>
+							<div class="layer40">
+								<img src="images/layer40.png">
+							</div> 
+							<div class="layer32">
+								<img src="images/layer33.png">
+							</div> 
+							<div class="time10">
+								<i class="fa fa-clock-o">3h</i>
+							</div>
+							<div class="gaming">
+								<h5>Ouya - Gaming<br> romanesc</h5>
+							</div>
+						</div>
+					</div>
+					
+					<div class="img6">
+						<div class="floating-box">
+							<div class="bottomcontainer4">
+								<img src="images/bottomcontainer4.png">
+							</div>
+							<div class="layer37">
+								<img src="images/layer37.png">
+							</div> 
+							<div class="layer34">
+								<img src="images/layer34.png">
+							</div> 
+							<div class="time11">
+								<i class="fa fa-clock-o">3h</i>
+							</div>
+							<div class="visand">
+								<h5>Visand la nemurirea<br> sufletului</h5>
+							</div>
+						</div>
+
+					</div>
+					<div>
+						<a href="#" class="buttonVeziToate"><i class="fa fa-arrow-right"></i> Vezi toate in "Recente"</a>
+					</div>
+				</div>
+			</div>		
+		</div>
+
+		<div id="popularContent1" class="bot" style="display: none;">
+			<div class="mid">
+				<div class="box">	
+					<div class="img1">
+						<div class="floating-box">
+								<img src="images/layer35.png">
+								<h5 class="thisis">This is Photoshop's version  of Lorem<br> Ipsum. Proin gravida nibh vel velit<br> auctor aliquet.</h5>
+							<div class="oreramase32z">
+		                        <div style="font-size: 36px;">32z</div>
+		                        <div style="font-size: 12px;">ramase</div>
+		                    	</div>
+		                    <div class="bordvert"></div>
+		                    <div class="finantat13">
+		                        <div style="font-size: 36px;">13%</div>
+		                        <div style="font-size: 14px;">finantat</div>
+		                    </div>
+		                    <div class="arowicon">
+		                    	<img src="images/arowicon.png">
+		                    </div>
+		                    <div class="userpic2">
+		                    	<img src="images/userpic2.png">
+		                    </div>
+		                    <div class="time6">
+		                        <i class="fa fa-clock-o">3h</i>
+		                    </div>
+		                    <div class="cafart">
+		                        <h5>
+		                            Cafeneaua Artistilor si<br> Iubitorilor de Arta
+		                        </h5>
+                        	</div>   
+						</div>
+					</div>
+					<div class="img2">
+						<div class="floating-box">
+							<div class="bottomcontainer1">
+                       			<img src="images/bottomcontainer1.png">
+                    		</div>
+                    		<div class="layer38">
+                    			<img src="images/layer38.png">
+                    		</div>
+                    		<div class="layer31">
+                        		<img src="images/layer31.png">
+                    		</div>
+                    		<div class="time8">
+                        		<i class="fa fa-clock-o">3h</i>
+                   			</div>
+                   			<div class="fete">
+                        		<h5>
+                            		Fete si camerele lor. O<br> analiza obiectiva
+                        		</h5>
+							</div>
+						</div>
+					</div>
+					<div class="img3">
+						<div class="floating-box">
+							<div class="bottomcontainer4">
+								<img src="images/bottomcontainer4.png">
+							</div>
+							<div class="layer37">
+								<img src="images/layer37.png">
+							</div> 
+							<div class="layer34">
+								<img src="images/layer34.png">
+							</div> 
+							<div class="time11">
+								<i class="fa fa-clock-o">3h</i>
+							</div>
+							<div class="visand">
+								<h5>Visand la nemurirea<br> sufletului</h5>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+
+				<div class="box2">	
+					<div class="img4">
+						<div class="floating-box">
+							<div class="bottomcontainer2">
+								<img src="images/bottomcontainer2.png">
+							</div>
+							<div class="layer39">
+								<img src="images/layer39.png">
+							</div> 
+							<div class="layer32">
+								<img src="images/layer32.png">
+							</div> 
+							<div class="time9">
+								<i class="fa fa-clock-o">3h</i>
+							</div>
+							<div class="zbor">
+								<h5>
+									Un zbor deasupra unui<br> cuib de cuci..cu balonul
+								</h5>
+							</div> 
+						</div>
+					</div>
+					
+					<div class="img5">
+						<div class="floating-box">
+							<div class="bottomcontainer3">
+								<img src="images/bottomcontainer3.png">
+							</div>
+							<div class="layer40">
+								<img src="images/layer40.png">
+							</div> 
+							<div class="layer32">
+								<img src="images/layer33.png">
+							</div> 
+							<div class="time10">
+								<i class="fa fa-clock-o">3h</i>
+							</div>
+							<div class="gaming">
+								<h5>Ouya - Gaming<br> romanesc</h5>
+							</div>
+						</div>
+					</div>
+					
+					<div class="img6">
+						<div class="floating-box">
+							<div class="bottomcontainer">
+								<img src="images/bottomcontainer.png">
+							</div>
+							<div class="layer36">
+								<img src="images/layer36.png">
+							</div>
+							<div class="layer30">
+                    			<img src="images/layer30.png">
+                			</div>
+                			<div class="time7">
+                        		<i class="fa fa-clock-o">3h</i>
+                    		</div>
+                    		<div class="documentar">
+                       			<h5>Documentarul oamenilor</h5>
+                    		</div>
+						</div>
+
+					</div>
+					<div>
+						<a href="#" class="buttonVeziToate"><i class="fa fa-arrow-right"></i> Vezi toate in "Recente"</a>
+					</div>
+				</div>
+			</div>	
+		</div>
+
+		<div class="footer">
+			<div class="mid">
+				<div class="table">
+					<table>
+						  <tr>
+						    <th>DESCOPERA PROIECTE</th>
+						    <th></th>
+						    <th></th>
+						    <th>DESPRENOI</th>
+						    <th>CONTACT</th>
+						    <th></th>
+						  </tr>
+						  <tr>
+						    <td><a href="#">Arta</a></td>
+						    <td><a href="#">Jocuri</td>
+						    <td><a href="#"><a href="#">Antreprenoriat</td>
+						    <td><a href="#">Despre noi</td>
+						    <td><a href="#"><a href="#">Email</td>
+						    <td><a href="#">Newstller</td>
+						  </tr>
+						  <tr>
+						    <td><a href="#">Muzica</td>
+						    <td><a href="#">Fotografie</td>
+						    <td><a href="#">Umanitare</td>
+						    <td><a href="#">Termeni si Conditii</td>
+						    <td><a href="#">Facebook</td>
+						    <td><a href="#">RSS</td>
+						  </tr>
+						  <tr>
+						    <td><a href="#">Dans</td>
+						    <td><a href="#">Tehnologie</td>
+						    <td><a href="#"><a href="#">Video/Documentar</td>
+						    <td><a href="#">Intrebari frecvente</td>
+						    <td><a href="#">Twitter</td>
+						  </tr>
+						</table>
+				</div>				
+			</div>			
+		</div>		
+	</body>	
+</html> 	
+
