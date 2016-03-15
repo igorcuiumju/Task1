@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>bxbaner</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<!-- bxSlider Javascript file -->
+	<script src="js/jquery.bxslider.min.js"></script>
+	<!-- bxSlider CSS file -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+  			$('.bxslider').bxSlider({
+			  nextSelector: '#slider-next',
+			  prevSelector: '#slider-prev',
+			  nextText: 'Next',
+			  prevText: 'Previous'
+			});
+		});
+	</script>
+	<link href="css/jquery.bxslider.css" rel="stylesheet" />
+</head>
+
+<body>
+	<div class="container">
+		<ul class="bxslider">
+		  <li><img src="images/1.png" /></li>
+		  <li><img src="images/2.png" /></li>
+		  <li><img src="images/3.png" /></li>
+		  <li><img src="images/4.png" /></li>
+		  <li><img src="images/5.png" /></li>
+		</ul>
+	</div>
+	<div class="outside">	
+	  <button id="slider-prev"></button> 
+	  <button id="slider-next"></button>
+	</div>		
+</body>
+</html>
