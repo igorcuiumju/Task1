@@ -1,0 +1,11 @@
+.rotate {
+    background: #F02311;
+    color: #FFF;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    font: normal 1em Arial;
+    position: relative;
+    top: 50px;
+    left: 50px;
+}

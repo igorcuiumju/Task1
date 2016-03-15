@@ -122,11 +122,10 @@
 
 
 #slider-prev {
-    margin-left: 544px;
+	float: left;
 }
 
 #slider-next {
-    margin-left: 372px;
+	float: right;
 }
-
 
