@@ -1,0 +1,9 @@
+.rectangle-rotate{
+	width: 150px;
+	height:200px;
+	background:red;
+	position: relative;
+	top: 30%;
+	margin-left: auto;
+	margin-right: auto;
+	}
