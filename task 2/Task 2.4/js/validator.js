@@ -1,6 +1,6 @@
 
 $(document).ready(function() {
-    $("#btnValidate").click(function(){
+    $("#submit").click(function(){
  
 	var name = $("#inName").val();
 	var email = $("#inEmail").val();
