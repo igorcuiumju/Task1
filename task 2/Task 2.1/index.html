@@ -1,26 +1,26 @@
+<!DOCTYPE html>
 <html>
 <head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
 </head>
-
 <body>
-<input type="text" id="inString" />
-<button onclick="onbtnClick()">Click</button>
-<script>
+	<input type="text" id="inString" />
+	<button id="revert-button">Click</button>
+	<script>
 
-function onbtnClick(id) {
-	var textVal = $("#inString").val().toUpperCase();
-	var textArray = new Array();
-	for (var i = textVal.length - 1; i >= 0; i--) {
-		textArray.push(textVal[i]);
+	var revertButton = document.getElementById('revert-button');
+
+	revertButton.addEventListener('click', function() {
+		var textVal = document.getElementById('inString').value;
+		console.log(revertUpperCase(textVal));
+	})
+
+	function revertUpperCase(textVal) {
+		var textVal = textVal.toUpperCase();
+		return textVal.split('').reverse();
 	}
-	
-	console.log(textArray);
-}
 
-</script>
+	</script>
 
 </body>
 
-</html>
+</html>	
