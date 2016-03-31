@@ -1,0 +1,177 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+@font-face {
+			font-family: 'LaurenCBrown'; 
+			src: url(../fonts/ufonts.com_lauren-c-brown.ttf);  
+			}
+
+body {
+	background-color: #FFFFFF;
+	font-family: 'Roboto', sans-serif;
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;;
+
+}
+
+.roline {
+	background: url(../images/roline.png);
+	height: 2px;
+	background-size: cover;
+	background-position: center bottom;	
+}
+
+.content {
+	max-width: 980px;
+	margin: 0 auto;
+}
+
+.menu {
+	background-color:  #383d48;
+	height: 60px;
+	line-height: 60px;
+	overflow: hidden;
+
+}
+
+/*.edonate {
+	margin-right: -30;
+}*/
+
+.menu-left {
+	width: 60%;
+	display: inline-block;
+	overflow: hidden;
+}
+
+.menu a {
+	color: #ffffff;
+	font-family: 'Roboto', sans-serif;
+}
+
+.menu-left a {
+	padding: 16px;
+	text-align: left;
+}
+
+.menu-right {
+	display: inline-block;
+	float: right;
+}
+
+.search {
+	height: 55px; 
+	width: 200px; 
+	background-color: #404654; 
+	border-color: #404654;
+}
+
+.logare {
+	height: 60px;
+	background-color:  #ff7474;
+	text-align: center;
+	width: 116px
+}
+
+.head {
+	background: url(../images/bg.png);
+	height: 500px;
+	background-position: center bottom;
+	background-size: cover;
+}
+
+.content h1 {
+	width: 80%;
+	font-family: Roboto;
+	color:  #383d48;
+	font-size: 72px;
+	font-weight: 100;
+	text-align: left;
+	padding-top: 50px;
+}
+
+.text-button {
+	padding-top: 90px;
+	width: 48%;
+	float: left;
+}
+
+.text-button p {
+	font-family: Roboto;
+	color:  #7a8387;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 30px;
+	text-align: left;
+
+}
+
+.buttonCreazaCont{
+	background: #484c54;
+	border-radius: 999px;
+	color: #fff;
+	display: inline-block;
+	padding:  10px 35px;
+	text-align: center;
+	text-shadow: none;
+	margin-top: 75px;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+.video {
+	width: 46%;	
+	float: right;
+	padding-top: 70px;
+
+}
+
+.video iframe {
+	width: 100%;
+}
+
+
+.text-video {
+	width: 100%;
+	height: auto;
+}
+
+.content1-left {
+	width: 70%;
+
+}
+
+.content h3  {
+	float: left;
+	padding-top: 65px;
+    margin-left: 18px;
+	font-family: Roboto;
+	color: #383d48;
+	font-size: 30px;
+	font-weight: 300;
+	line-height: 110px;
+	text-align: left;
+}
+
+.content img {
+	float: left;
+	padding-top: 100px;
+}
+
+hr {
+	background-color:  #e6e6e6;
+	width: 639px;
+	height: 1px;
+}
+
+.proiectulLunii {
+	width: 
+}
