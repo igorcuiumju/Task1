@@ -1,61 +1,496 @@
 <!DOCTYPE html>
 <html>
 <head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Responsiv Web Designe</title>
-		<link href="css/style.css" type="text/css" rel="stylesheet" />
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-		<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Responsiv Web Designe</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
+	<script type="text/javascript">
+		function changeMidContent(idContent, idMenu) {
+			document.getElementById("recentContent").style.display= "none";
+			document.getElementById("popularContent").style.display= "none";
+			document.getElementById("endingContent").style.display= "none";
+			document.getElementById("popularyContent").style.display= "none";
+
+			document.getElementById("menuRecent").className = "";
+			document.getElementById("menuPopular").className = "";
+			document.getElementById("menuEnding").className = "";
+			document.getElementById("menuPopulary").className = "";
+
+			document.getElementById(idContent).style.display= "block";
+			document.getElementById(idMenu).className = "selectedMidItem";
+		}
+	</script>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
-
-<body class="body">
-	<div class="roline"></div>
+ 
+<body>
+	<div class="gradient"></div>
 	<div class="menu">
 		<div class="content">
 			<div class="menu-left">
-				<a class="edonate" href="#">eDONATIE</a>
+				<a href="#">eDONATIE</a>
 				<a href="#"><i class="fa fa-eye"></i> DESCOPERA PROIECTE</a>
 				<a href="#"><i class="fa fa-plus"></i> CREEAZA PROIECT</a>
 			</div>
-			<div class="menu-right logare">
+			<div class="menu-right menu-login">
 				<a  href="#"><i class="fa fa-lock"></i> LOGARE</a>
 			</div>
 			<div class="menu-right">
-				<input class="search" type="text" placeholder="Cautare"/input>
+				<input class="menu-search" type="text" placeholder="Cautare"/input>
 			</div>
-		</div>		
+		</div>	
 	</div>
 	
-	<div class="head">
+	<div class="header">
 		<div class="content">
 			<h1>Crowdfunding romanesc</h1>
-			<div class="text-video">	
-				<div class="text-button">
-					<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat.</p>
-					<a class="buttonCreazaCont" href="#">Creaza Cont</a>
+			<div class="header-left">
+				<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat.
+				</p>
+				<div class="header-button">
+					<a href="#">Creaza Cont</a>
 				</div>
-				<div class="video">
-					<iframe width="450" height="300" src="https://www.youtube.com/embed/3gxNW2Ulpwk" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="header-right">
+				<iframe width="440" height="290" src="https://www.youtube.com/embed/3gxNW2Ulpwk" frameborder="0" allowfullscreen></iframe>
+			</div>		
+		</div>	
+	</div>
+	<div class="gradient"></div>
+	
+	<div class="midle">
+		<div class="content">
+			<div class="l-midle-main">
+				<div class="l-midle-main_title">
+					<img src="images/staricon.png">
+					<h1>Locuri de Vizitat; O drumetie</h1>
+				</div>
+				<div class="hr"></div>
+				<div class="l-midle-main_content">
+					<div class="ProjectPicture">
+						<img src="images/userpic1.png">
+						<div class="ProjectPicture-time">
+							<i class="fa fa-clock-o"></i>23z
+						</div>
+						<p>Proiectul Lunii propus de <b>Ana Toader</b></p>
+					</div>
+					<div class="ProjectDescription">
+						<h2>DESCRIEREA PROIECTULUI</h2>
+						<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet ...</p>
+						<a href="#"><i class="fa fa-arrow-right" style="color: #ff7474">
+						</i> Viziteaza proiectul</a>
+					</div>		
+					<div class="border"></div>
+					<div class="l-midle-main_content__footer">
+						<p><span>60</span><br>ORE RAMASE</p>
+						<p><span>79%</span><br>FINANTAT</p>
+					</div>
+				</div>
+			</div><!--
+		 --><div class="l-midle-sitebar">
+				<div class="l-midle-sitebar_title">
+					<img src="images/listicon.png">
+					<h1>Activitate recenta</h1>
+				</div>
+				<div class="midlehr"></div>
+				<div class="l-midle-sitebar_content">
+					<div class="l-midle-sitebar_content__picture">
+						<img class="img-size" src="images/layer4.png">
+					</div>
+					<div class="l-midle-sitebar_content__description">
+						<h2>GimmeMoMoney</h2>
+						<div class="l-midle-sitebar_content__time">
+							<i class="fa fa-clock-o"></i>10m
+						</div>
+						<p>a creat un proiect nou in <b>Proiecte umanitare</b></p>
+					</div>
+					<div class="border_sitebar"></div>
+
+					<div class="l-midle-sitebar_content__picture">
+						<img class="img-size" src="images/layer5.png">
+					</div>
+					<div class="l-midle-sitebar_content__description">
+						<h2>Dan Silvestru</h2>
+						<div class="l-midle-sitebar_content__time">
+							<i class="fa fa-clock-o"></i>1h
+						</div>
+						<p>a reusit sa finanteze proiectul <b>Mana de la mana pentru Iasi</b></p>
+					</div>
+					<div class="border_sitebar"></div>
+
+					<div class="l-midle-sitebar_content__picture">
+						<img class="img-size" src="images/layer7.png">
+					</div>
+					<div class="l-midle-sitebar_content__description">
+						<h2>CaricaturiLaMinut</h2>
+						<div class="l-midle-sitebar_content__time">
+							<i class="fa fa-clock-o"></i>3h
+						</div>
+						<p>se termina in 4 ore si e finantat 99%.<b>Ajuta-l!</b></p>
+					</div>
+					<div class="border_sitebar"></div>
+
+					<div class="l-midle-sitebar_content__picture">
+						<img class="img-size" src="images/layer29.png">
+					</div>
+					<div class="l-midle-sitebar_content__description">
+						<h2>Practicul</h2>
+						<div class="l-midle-sitebar_content__time">
+							<i class="fa fa-clock-o"></i>3h
+						</div>
+						<p>a postat un proiect nou in <b>Proiecte Amuzante</b></p>
+					</div>
+					<div class="border_sitebar"></div>
+					<div class="l-midle-sitebar_content__button">
+						<a href="#"><i class="fa fa-arrow-right" style="color: #ff7474"></i>Vezi mai multe</a>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="roline"></div>
-
-	<div class="content">
-		<div class="content1-left">
-			<img src="images/staricon.png">
-			<h3>Locuri de Vizitat; O drumetie</h3>
+	
+	<div class="middle-menu">
+		<div class="content">
+			<div class="middle-menu__navigation">
+				<ul>
+					<li><a id="menuRecent" class="selectedMidItem" onClick="changeMidContent('recentContent', 'menuRecent')">RECENTE</a></li>
+					<li><a id="menuPopular" onClick="changeMidContent('popularContent', 'menuPopular')">POPULARE</a></li>
+					<li><a id="menuEnding" onClick="changeMidContent('endingContent', 'menuEnding')">PE TERMINATE</a></li>
+					<li><a id="menuPopulary" onClick="changeMidContent('popularyContent', 'menuPopulary')">POPULARE</a></li>
+				</ul>
+			</div>
 		</div>
-		<hr>
-		<div class="proiectulLunii">
-			<img src="images/pic1.png">
+	</div>
+	
+	<div id="recentContent" class="middle-content">
+		<div class="content">
+			<div class="middle-content__galery">	
+				<div class="middle-content__pictures">
+					<img src="images/layer353.png">
+					<div class="info-area">
+						<img src="images/userpic1.png">
+						<div class="info-area__time">
+							<i class="fa fa-clock-o"></i>3h
+						</div>
+						<p>Proiectul Lunii propus de <b>Ana Toader</b></p>
+					</div>
+				</div><!--
+			 --><div class="middle-content__pictures">
+					<img src="images/Layer%2036.png">
+					<div class="info-area">
+						<img src="images/layer30.png">
+						<div class="info-area__time">
+							<i class="fa fa-clock-o"></i>3h
+						</div>
+						<p>Documentarul oamenilor</p>
+					</div><!--
+			 --></div>
+				<div class="middle-content__pictures">
+					<img src="images/Layer%2038.png">
+					<div class="info-area">
+						<img src="images/layer31.png">
+						<div class="info-area__time">
+							<i class="fa fa-clock-o"></i>3h
+						</div>
+						<p>Fete si camerele lor. O analiza obiectiva</p>
+					</div>
+				</div><!--
+			 --><div class="middle-content__pictures">
+					<img src="images/Layer%2039.png">
+					<div class="info-area">
+						<img src="images/layer32.png">
+						<div class="info-area__time">
+							<i class="fa fa-clock-o"></i>3h
+						</div>
+						<p>Un zbor deasupra unui cuib de cuci..cu balonul</p>
+					</div>
+				</div><!--
+			 --><div class="middle-content__pictures">
+					<img src="images/Layer%2040.png">
+					<div class="info-area">
+						<img src="images/layer33.png">
+						<div class="info-area__time">
+							<i class="fa fa-clock-o"></i>3h
+						</div>
+						<p>Ouya - Gaming romanesc</p>
+					</div>
+				</div><!--
+			 --><div class="middle-content__pictures">
+					<img src="images/Layer%2037.png">
+					<div class="info-area">
+						<img src="images/layer34.png">
+						<div class="info-area__time">
+							<i class="fa fa-clock-o"></i>3h
+						</div>
+						<p>Visand la nemurirea sufletului</p>
+					</div>
+				</div>
+				<div class="middle-content__button">
+					<a href="#"><i class="fa fa-arrow-right"></i> Vezi toate in "Recente"</a>
+				</div>
+			</div>				
+		</div>
+	</div>
+
+	<div id="popularContent" class="middle-content no-display">
+		<div class="content">
+			<div class="middle-content__galery">	
+				<div class="middle-content__pictures">
+					<img src="images/layer353.png">
+					<div class="info-area">
+						<img src="images/userpic1.png">
+						<div class="info-area__time">
+							<i class="fa fa-clock-o"></i>3h
+						</div>
+						<p>Proiectul Lunii propus de <b>Ana Toader</b></p>
+					</div>
+				</div><!--
+			 --><div class="middle-content__pictures">
+					<img src="images/Layer%2040.png">
+					<div class="info-area">
+						<img src="images/layer33.png">
+						<div class="info-area__time">
+							<i class="fa fa-clock-o"></i>3h
+						</div>
+						<p>Ouya - Gaming romanesc</p>
+					</div>
+				</div><!--
+				--><div class="middle-content__pictures">
+					<img src="images/Layer%2038.png">
+					<div class="info-area">
+						<img src="images/layer31.png">
+						<div class="info-area__time">
+							<i class="fa fa-clock-o"></i>3h
+						</div>
+						<p>Fete si camerele lor. O analiza obiectiva</p>
+					</div>
+				</div><!--
+			 --><div class="middle-content__pictures">
+					<img src="images/Layer%2039.png">
+					<div class="info-area">
+						<img src="images/layer32.png">
+						<div class="info-area__time">
+							<i class="fa fa-clock-o"></i>3h
+						</div>
+						<p>Un zbor deasupra unui cuib de cuci..cu balonul</p>
+					</div>
+				</div><!--
+			--><div class="middle-content__pictures">
+				<img src="images/Layer%2036.png">
+				<div class="info-area">
+					<img src="images/layer30.png">
+					<div class="info-area__time">
+						<i class="fa fa-clock-o"></i>3h
+					</div>
+					<p>Documentarul oamenilor</p>
+				</div>
+			</div><!--
+			 
+			 --><div class="middle-content__pictures">
+					<img src="images/Layer%2037.png">
+					<div class="info-area">
+						<img src="images/layer34.png">
+						<div class="info-area__time">
+							<i class="fa fa-clock-o"></i>3h
+						</div>
+						<p>Visand la nemurirea sufletului</p>
+					</div>
+				</div>
+				<div class="middle-content__button">
+					<a href="#"><i class="fa fa-arrow-right"></i> Vezi toate in "Recente"</a>
+				</div>
+			</div>				
+		</div>
+	</div>
+
+	<div id="endingContent" class="middle-content no-display">
+		<div class="content">
+			<div class="middle-content__galery">	
+				<div class="middle-content__pictures">
+					<img src="images/layer353.png">
+					<div class="info-area">
+						<img src="images/userpic1.png">
+						<div class="info-area__time">
+							<i class="fa fa-clock-o"></i>3h
+						</div>
+						<p>Proiectul Lunii propus de <b>Ana Toader</b></p>
+					</div>
+				</div><!--
+			 --><div class="middle-content__pictures">
+					<img src="images/Layer%2036.png">
+					<div class="info-area">
+						<img src="images/layer30.png">
+						<div class="info-area__time">
+							<i class="fa fa-clock-o"></i>3h
+						</div>
+						<p>Documentarul oamenilor</p>
+					</div><!--
+			 --></div>
+				<div class="middle-content__pictures">
+					<img src="images/Layer%2038.png">
+					<div class="info-area">
+						<img src="images/layer31.png">
+						<div class="info-area__time">
+							<i class="fa fa-clock-o"></i>3h
+						</div>
+						<p>Fete si camerele lor. O analiza obiectiva</p>
+					</div>
+				</div><!--
+			 --><div class="middle-content__pictures">
+					<img src="images/Layer%2039.png">
+					<div class="info-area">
+						<img src="images/layer32.png">
+						<div class="info-area__time">
+							<i class="fa fa-clock-o"></i>3h
+						</div>
+						<p>Un zbor deasupra unui cuib de cuci..cu balonul</p>
+					</div>
+				</div><!--
+			 --><div class="middle-content__pictures">
+					<img src="images/Layer%2040.png">
+					<div class="info-area">
+						<img src="images/layer33.png">
+						<div class="info-area__time">
+							<i class="fa fa-clock-o"></i>3h
+						</div>
+						<p>Ouya - Gaming romanesc</p>
+					</div>
+				</div><!--
+			 --><div class="middle-content__pictures">
+					<img src="images/Layer%2037.png">
+					<div class="info-area">
+						<img src="images/layer34.png">
+						<div class="info-area__time">
+							<i class="fa fa-clock-o"></i>3h
+						</div>
+						<p>Visand la nemurirea sufletului</p>
+					</div>
+				</div>
+				<div class="middle-content__button">
+					<a href="#"><i class="fa fa-arrow-right"></i> Vezi toate in "Recente"</a>
+				</div>
+			</div>				
+		</div>
+	</div>
+
+	<div id="popularyContent" class="middle-content no-display">
+		<div class="content">
+			<div class="middle-content__galery">	
+				<div class="middle-content__pictures">
+					<img src="images/layer353.png">
+					<div class="info-area">
+						<img src="images/userpic1.png">
+						<div class="info-area__time">
+							<i class="fa fa-clock-o"></i>3h
+						</div>
+						<p>Proiectul Lunii propus de <b>Ana Toader</b></p>
+					</div>
+				</div><!--
+			 --><div class="middle-content__pictures">
+					<img src="images/Layer%2040.png">
+					<div class="info-area">
+						<img src="images/layer33.png">
+						<div class="info-area__time">
+							<i class="fa fa-clock-o"></i>3h
+						</div>
+						<p>Ouya - Gaming romanesc</p>
+					</div>
+				</div><!--
+				--><div class="middle-content__pictures">
+					<img src="images/Layer%2038.png">
+					<div class="info-area">
+						<img src="images/layer31.png">
+						<div class="info-area__time">
+							<i class="fa fa-clock-o"></i>3h
+						</div>
+						<p>Fete si camerele lor. O analiza obiectiva</p>
+					</div>
+				</div><!--
+			 --><div class="middle-content__pictures">
+					<img src="images/Layer%2039.png">
+					<div class="info-area">
+						<img src="images/layer32.png">
+						<div class="info-area__time">
+							<i class="fa fa-clock-o"></i>3h
+						</div>
+						<p>Un zbor deasupra unui cuib de cuci..cu balonul</p>
+					</div>
+				</div><!--
+			--><div class="middle-content__pictures">
+				<img src="images/Layer%2036.png">
+				<div class="info-area">
+					<img src="images/layer30.png">
+					<div class="info-area__time">
+						<i class="fa fa-clock-o"></i>3h
+					</div>
+					<p>Documentarul oamenilor</p>
+				</div>
+			</div><!--
+			 
+			 --><div class="middle-content__pictures">
+					<img src="images/Layer%2037.png">
+					<div class="info-area">
+						<img src="images/layer34.png">
+						<div class="info-area__time">
+							<i class="fa fa-clock-o"></i>3h
+						</div>
+						<p>Visand la nemurirea sufletului</p>
+					</div>
+				</div>
+				<div class="middle-content__button">
+					<a href="#"><i class="fa fa-arrow-right"></i> Vezi toate in "Recente"</a>
+				</div>
+			</div>				
+		</div>
+	</div>
+
+	<div class="gradient"></div>
+	<div class="footer">
+		<div class="content">
+			<div class="table">
+				<table>
+				  <tr>
+					<th>DESCOPERA PROIECTE</th>
+					<th></th>
+					<th></th>
+					<th>DESPRENOI</th>
+					<th>CONTACT</th>
+					<th></th>
+				  </tr>
+				  <tr>
+					<td><a href="#">Arta</a></td>
+					<td><a href="#">Jocuri</a></td>
+					<td><a href="#">Antreprenoriat</a></td>
+					<td><a href="#">Despre noi</a></td>
+					<td><a href="#">Email</a></td>
+					<td><a href="#">Newstller</a></td>
+				  </tr>
+				  <tr>
+					<td><a href="#">Muzica</a></td>
+					<td><a href="#">Fotografie</a></td>
+					<td><a href="#">Umanitare</a></td>
+					<td><a href="#">Termeni si Conditii</a></td>
+					<td><a href="#">Facebook</a></td>
+					<td><a href="#">RSS</a></td>
+				  </tr>
+				  <tr>
+					<td><a href="#">Dans</a></td>
+					<td><a href="#">Tehnologie</a></td>
+					<td><a href="#">Video/Documentar</a></td>
+					<td><a href="#">Intrebari frecvente</a></td>
+					<td><a href="#">Twitter</a></td>
+				  </tr>
+				</table>
+			</div>			
 		</div>
 	</div>
 
 </body>
-
 </html>
-
